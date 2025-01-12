@@ -29,7 +29,7 @@ jobs:
           context: .
           push: true
           tags: dimahockey/simple-node:latest,dimahockey/simple-node:${{github.run_number}}          
-          secretes: |
-            "FAVORITE_FOOD=${{ variables.FAVORITE_FOOD }}" 
+          secrets: |
+            "FAVORITE_FOOD=${{ secrtes.FAVORITE_FOOD }}" 
         
         #run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
