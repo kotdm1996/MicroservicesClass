@@ -30,6 +30,6 @@ jobs:
           push: true
           tags: dimahockey/simple-node:latest,dimahockey/simple-node:${{github.run_number}}          
           secrets: |
-            "FAVORITE_FOOD=${{ secretes.FAVORITE_FOOD }}" 
+            "FAVORITE_FOOD=${{ secrets.FAVORITE_FOOD }}" 
         
         #run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
